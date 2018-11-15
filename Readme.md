@@ -1,3 +1,9 @@
+<!-- default file list -->
+*Files to look at*:
+
+* [Form1.cs](./CS/DXApplication1/Form1.cs) (VB: [Form1.vb](./VB/DXApplication1/Form1.vb))
+* [Program.cs](./CS/DXApplication1/Program.cs) (VB: [Program.vb](./VB/DXApplication1/Program.vb))
+<!-- default file list end -->
 # How to save/restore a palette name 
 
 
