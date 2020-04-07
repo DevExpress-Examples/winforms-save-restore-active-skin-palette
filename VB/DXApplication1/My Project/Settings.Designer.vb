@@ -11,36 +11,41 @@
 Namespace My
 
 
-    <Global.System.Runtime.CompilerServices.CompilerGeneratedAttribute(), Global.System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "15.3.0.0")> _
-    Friend NotInheritable Partial Class Settings
-        Inherits System.Configuration.ApplicationSettingsBase
+	<Global.System.Runtime.CompilerServices.CompilerGeneratedAttribute()>
+	<Global.System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "15.3.0.0")>
+	Friend NotInheritable Partial Class Settings
+		Inherits System.Configuration.ApplicationSettingsBase
 
-        Private Shared defaultInstance As Settings = (CType(Global.System.Configuration.ApplicationSettingsBase.Synchronized(New Settings()), Settings))
+		Private Shared defaultInstance As Settings = (CType(Global.System.Configuration.ApplicationSettingsBase.Synchronized(New Settings()), Settings))
 
-        Public Shared ReadOnly Property [Default]() As Settings
-            Get
-                Return defaultInstance
-            End Get
-        End Property
+		Public Shared ReadOnly Property [Default]() As Settings
+			Get
+				Return defaultInstance
+			End Get
+		End Property
 
-        <Global.System.Configuration.UserScopedSettingAttribute(), Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), Global.System.Configuration.DefaultSettingValueAttribute("")> _
-        Public Property SkinName() As String
-            Get
-                Return (DirectCast(Me("SkinName"), String))
-            End Get
-            Set(ByVal value As String)
-                Me("SkinName") = value
-            End Set
-        End Property
+		<Global.System.Configuration.UserScopedSettingAttribute()>
+		<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>
+		<Global.System.Configuration.DefaultSettingValueAttribute("")>
+		Public Property SkinName() As String
+			Get
+				Return (DirectCast(Me("SkinName"), String))
+			End Get
+			Set(ByVal value As String)
+				Me("SkinName") = value
+			End Set
+		End Property
 
-        <Global.System.Configuration.UserScopedSettingAttribute(), Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), Global.System.Configuration.DefaultSettingValueAttribute("")> _
-        Public Property Palette() As String
-            Get
-                Return (DirectCast(Me("Palette"), String))
-            End Get
-            Set(ByVal value As String)
-                Me("Palette") = value
-            End Set
-        End Property
-    End Class
+		<Global.System.Configuration.UserScopedSettingAttribute()>
+		<Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>
+		<Global.System.Configuration.DefaultSettingValueAttribute("")>
+		Public Property Palette() As String
+			Get
+				Return (DirectCast(Me("Palette"), String))
+			End Get
+			Set(ByVal value As String)
+				Me("Palette") = value
+			End Set
+		End Property
+	End Class
 End Namespace
