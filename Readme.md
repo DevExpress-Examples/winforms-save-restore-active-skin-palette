@@ -4,13 +4,15 @@
 * [Form1.cs](./CS/DXApplication1/Form1.cs) (VB: [Form1.vb](./VB/DXApplication1/Form1.vb))
 * [Program.cs](./CS/DXApplication1/Program.cs) (VB: [Program.vb](./VB/DXApplication1/Program.vb))
 <!-- default file list end -->
-# How to save/restore a palette name 
+# How to save/restore the applied skin and palette between application sessions 
 
 
-<a href="https://www.devexpress.com/Support/Center/Example/Details/E2897/how-to-save-a-skin-name-applied-to-an-application-to-be-able-to-apply-it-at-the-next#"><br></a>
-<p> </p>
-<p>This example demonstrates how to save the current skin and palette between sessions. For this, the application settings are used.</p>
+<p>
+This example demonstrates how to persist the applied skin and palette between application sessions. In this project, the SkinName and ActiveSvgPaletteName properties are saved. 
+</p>
 
-<br/>
+<p>
+For more information on persisting application settings, please see the following MSDN article: <a href="http://msdn.microsoft.com/en-us/library/k4s6c3a0.aspx">Application Settings Overview</a>
+</p>
 
 
