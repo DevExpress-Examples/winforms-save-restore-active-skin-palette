@@ -8,7 +8,8 @@
 
 
 <p>
-This example demonstrates how to persist the applied skin and palette between application sessions. In this project, the SkinName and ActiveSvgPaletteName properties are saved. 
+<a href="https://docs.microsoft.com/en-us/dotnet/desktop/winforms/advanced/application-settings-for-windows-forms?view=netframeworkdesktop-4.8">Windows Forms Application Settings</a>  feature allows you to create, store, and maintain custom application and user preferences on client computers. You can use this feature to save and restore active skins and palettes when your application restarts.
+Double-click the "Settings.settings" file in the Visual Studio Solution Explorer and create two entries of the String type. Set the scope of both entries to "User". When an application is about to close, save values of the UserLookAndFeel.Default.SkinName and UserLookAndFeel.Default.ActiveSvgPaletteName properties to Application Settings. When an application starts, read these saved values and pass them to the UserLookAndFeel.SetSkinStyle method as parameters.
 </p>
 
 <p>
