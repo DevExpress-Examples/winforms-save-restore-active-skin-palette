@@ -6,22 +6,18 @@ Imports DevExpress.UserSkins
 Imports DevExpress.Skins
 
 Namespace DXApplication1
-    Friend NotInheritable Class Program
+	Friend Module Program
+		''' <summary>
+		''' The main entry point for the application.
+		''' </summary>
+		<STAThread>
+		Sub Main()
+			Application.EnableVisualStyles()
+			Application.SetCompatibleTextRenderingDefault(False)
 
-        Private Sub New()
-        End Sub
-
-        ''' <summary>
-        ''' The main entry point for the application.
-        ''' </summary>
-        <STAThread>
-        Shared Sub Main()
-            Application.EnableVisualStyles()
-            Application.SetCompatibleTextRenderingDefault(False)
-
-            BonusSkins.Register()
-            SkinManager.EnableFormSkins()
-            Application.Run(New Form1())
-        End Sub
-    End Class
+			BonusSkins.Register()
+			SkinManager.EnableFormSkins()
+			Application.Run(New Form1())
+		End Sub
+	End Module
 End Namespace
