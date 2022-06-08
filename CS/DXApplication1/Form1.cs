@@ -24,6 +24,10 @@ namespace DXApplication1
             SavePalette();
         }
 
+        private void barButtonItem1_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e) {
+            ShowSwatchPicker(this);
+        }
+
         private void ShowSwatchPicker(Form owner) {
             using(var dialog = new DevExpress.Customization.SvgSkinPaletteSelector(owner)) {
                 dialog.ShowDialog();
@@ -35,31 +39,23 @@ namespace DXApplication1
             var settings = Properties.Settings.Default;
             settings.SkinName = UserLookAndFeel.Default.SkinName;
             settings.Palette = UserLookAndFeel.Default.ActiveSvgPaletteName;
-            settings.CompactMode = UserLookAndFeel.Default.CompactUIModeForced;
             settings.Save();
         }
 
         protected override void OnShown(EventArgs e) {
             base.OnShown(e);
             RestorePalette();
-            ShowSettings();
         }
 
         private void RestorePalette() {
             var settings = Properties.Settings.Default;
-            if (!string.IsNullOrEmpty(settings.SkinName)) {
-                if (settings.CompactMode)
-                    UserLookAndFeel.ForceCompactUIMode(true, false);
-                if (!string.IsNullOrEmpty(settings.Palette))
+            if(!String.IsNullOrEmpty(settings.SkinName)) {
+                if(!String.IsNullOrEmpty(settings.SkinName)) {
                     UserLookAndFeel.Default.SetSkinStyle(settings.SkinName, settings.Palette);
-                else UserLookAndFeel.Default.SetSkinStyle(settings.SkinName);
+                }
+                else
+                    UserLookAndFeel.Default.SetSkinStyle(settings.SkinName);
             }
-        }
-
-        private void ShowSettings() {
-            labelControl1.Text = Settings.Default.SkinName;
-            labelControl4.Text = Settings.Default.Palette != String.Empty ? Settings.Default.Palette : "n/a (default palette or raster skin)";
-            labelControl6.Text = Settings.Default.CompactMode ? "Yes" : "No";
         }
     }
 }
