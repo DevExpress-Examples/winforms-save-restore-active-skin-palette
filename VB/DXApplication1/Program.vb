@@ -1,22 +1,27 @@
-Imports System
+﻿Imports System
+Imports System.Collections.Generic
+Imports System.Linq
 Imports System.Windows.Forms
 Imports DevExpress.UserSkins
 Imports DevExpress.Skins
 
 Namespace DXApplication1
+    Friend NotInheritable Class Program
 
-    Friend Module Program
+        Private Sub New()
+        End Sub
 
         ''' <summary>
         ''' The main entry point for the application.
         ''' </summary>
         <STAThread>
-        Sub Main()
-            Call Application.EnableVisualStyles()
+        Shared Sub Main()
+            Application.EnableVisualStyles()
             Application.SetCompatibleTextRenderingDefault(False)
-            Call BonusSkins.Register()
-            Call SkinManager.EnableFormSkins()
-            Call Application.Run(New Form1())
+
+            BonusSkins.Register()
+            SkinManager.EnableFormSkins()
+            Application.Run(New Form1())
         End Sub
-    End Module
+    End Class
 End Namespace
