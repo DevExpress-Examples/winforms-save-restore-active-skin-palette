@@ -1,5 +1,7 @@
-﻿Namespace DXApplication1
-    Partial Public Class Form1
+Namespace DXApplication1
+
+    Partial Class Form1
+
         ''' <summary>
         ''' Required designer variable.
         ''' </summary>
@@ -10,14 +12,14 @@
         ''' </summary>
         ''' <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         Protected Overrides Sub Dispose(ByVal disposing As Boolean)
-            If disposing AndAlso (components IsNot Nothing) Then
-                components.Dispose()
+            If disposing AndAlso (Me.components IsNot Nothing) Then
+                Me.components.Dispose()
             End If
+
             MyBase.Dispose(disposing)
         End Sub
 
-        #Region "Windows Form Designer generated code"
-
+#Region "Windows Form Designer generated code"
         ''' <summary>
         ''' Required method for Designer support - do not modify
         ''' the contents of this method with the code editor.
@@ -45,27 +47,27 @@
             Me.layoutControlItem6 = New DevExpress.XtraLayout.LayoutControlItem()
             Me.labelControl7 = New DevExpress.XtraEditors.LabelControl()
             Me.layoutControlItem7 = New DevExpress.XtraLayout.LayoutControlItem()
-            DirectCast(Me.ribbonControl1, System.ComponentModel.ISupportInitialize).BeginInit()
-            DirectCast(Me.layoutControl1, System.ComponentModel.ISupportInitialize).BeginInit()
+            CType((Me.ribbonControl1), System.ComponentModel.ISupportInitialize).BeginInit()
+            CType((Me.layoutControl1), System.ComponentModel.ISupportInitialize).BeginInit()
             Me.layoutControl1.SuspendLayout()
-            DirectCast(Me.Root, System.ComponentModel.ISupportInitialize).BeginInit()
-            DirectCast(Me.layoutControlItem1, System.ComponentModel.ISupportInitialize).BeginInit()
-            DirectCast(Me.layoutControlItem2, System.ComponentModel.ISupportInitialize).BeginInit()
-            DirectCast(Me.layoutControlItem3, System.ComponentModel.ISupportInitialize).BeginInit()
-            DirectCast(Me.layoutControlItem4, System.ComponentModel.ISupportInitialize).BeginInit()
-            DirectCast(Me.layoutControlItem5, System.ComponentModel.ISupportInitialize).BeginInit()
-            DirectCast(Me.layoutControlItem6, System.ComponentModel.ISupportInitialize).BeginInit()
-            DirectCast(Me.layoutControlItem7, System.ComponentModel.ISupportInitialize).BeginInit()
+            CType((Me.Root), System.ComponentModel.ISupportInitialize).BeginInit()
+            CType((Me.layoutControlItem1), System.ComponentModel.ISupportInitialize).BeginInit()
+            CType((Me.layoutControlItem2), System.ComponentModel.ISupportInitialize).BeginInit()
+            CType((Me.layoutControlItem3), System.ComponentModel.ISupportInitialize).BeginInit()
+            CType((Me.layoutControlItem4), System.ComponentModel.ISupportInitialize).BeginInit()
+            CType((Me.layoutControlItem5), System.ComponentModel.ISupportInitialize).BeginInit()
+            CType((Me.layoutControlItem6), System.ComponentModel.ISupportInitialize).BeginInit()
+            CType((Me.layoutControlItem7), System.ComponentModel.ISupportInitialize).BeginInit()
             Me.SuspendLayout()
             ' 
             ' ribbonControl1
             ' 
             Me.ribbonControl1.ExpandCollapseItem.Id = 0
-            Me.ribbonControl1.Items.AddRange(New DevExpress.XtraBars.BarItem() { Me.ribbonControl1.ExpandCollapseItem, Me.ribbonControl1.SearchEditItem, Me.skinRibbonGalleryBarItem1, Me.skinPaletteRibbonGalleryBarItem1})
+            Me.ribbonControl1.Items.AddRange(New DevExpress.XtraBars.BarItem() {Me.ribbonControl1.ExpandCollapseItem, Me.ribbonControl1.SearchEditItem, Me.skinRibbonGalleryBarItem1, Me.skinPaletteRibbonGalleryBarItem1})
             Me.ribbonControl1.Location = New System.Drawing.Point(0, 0)
             Me.ribbonControl1.MaxItemId = 7
             Me.ribbonControl1.Name = "ribbonControl1"
-            Me.ribbonControl1.Pages.AddRange(New DevExpress.XtraBars.Ribbon.RibbonPage() { Me.ribbonPage1})
+            Me.ribbonControl1.Pages.AddRange(New DevExpress.XtraBars.Ribbon.RibbonPage() {Me.ribbonPage1})
             Me.ribbonControl1.Size = New System.Drawing.Size(758, 158)
             Me.ribbonControl1.StatusBar = Me.ribbonStatusBar1
             ' 
@@ -83,7 +85,7 @@
             ' 
             ' ribbonPage1
             ' 
-            Me.ribbonPage1.Groups.AddRange(New DevExpress.XtraBars.Ribbon.RibbonPageGroup() { Me.ribbonPageGroup1})
+            Me.ribbonPage1.Groups.AddRange(New DevExpress.XtraBars.Ribbon.RibbonPageGroup() {Me.ribbonPageGroup1})
             Me.ribbonPage1.Name = "ribbonPage1"
             Me.ribbonPage1.Text = "ribbonPage1"
             ' 
@@ -156,9 +158,9 @@
             ' 
             ' Root
             ' 
-            Me.Root.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.True
+            Me.Root.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.[True]
             Me.Root.GroupBordersVisible = False
-            Me.Root.Items.AddRange(New DevExpress.XtraLayout.BaseLayoutItem() { Me.layoutControlItem1, Me.layoutControlItem2, Me.layoutControlItem3, Me.layoutControlItem4, Me.layoutControlItem5, Me.layoutControlItem6, Me.layoutControlItem7})
+            Me.Root.Items.AddRange(New DevExpress.XtraLayout.BaseLayoutItem() {Me.layoutControlItem1, Me.layoutControlItem2, Me.layoutControlItem3, Me.layoutControlItem4, Me.layoutControlItem5, Me.layoutControlItem6, Me.layoutControlItem7})
             Me.Root.Name = "Root"
             Me.Root.Size = New System.Drawing.Size(758, 178)
             Me.Root.TextVisible = False
@@ -267,46 +269,64 @@
             Me.Ribbon = Me.ribbonControl1
             Me.StatusBar = Me.ribbonStatusBar1
             Me.Text = "Form1"
-            DirectCast(Me.ribbonControl1, System.ComponentModel.ISupportInitialize).EndInit()
-            DirectCast(Me.layoutControl1, System.ComponentModel.ISupportInitialize).EndInit()
+            CType((Me.ribbonControl1), System.ComponentModel.ISupportInitialize).EndInit()
+            CType((Me.layoutControl1), System.ComponentModel.ISupportInitialize).EndInit()
             Me.layoutControl1.ResumeLayout(False)
-            DirectCast(Me.Root, System.ComponentModel.ISupportInitialize).EndInit()
-            DirectCast(Me.layoutControlItem1, System.ComponentModel.ISupportInitialize).EndInit()
-            DirectCast(Me.layoutControlItem2, System.ComponentModel.ISupportInitialize).EndInit()
-            DirectCast(Me.layoutControlItem3, System.ComponentModel.ISupportInitialize).EndInit()
-            DirectCast(Me.layoutControlItem4, System.ComponentModel.ISupportInitialize).EndInit()
-            DirectCast(Me.layoutControlItem5, System.ComponentModel.ISupportInitialize).EndInit()
-            DirectCast(Me.layoutControlItem6, System.ComponentModel.ISupportInitialize).EndInit()
-            DirectCast(Me.layoutControlItem7, System.ComponentModel.ISupportInitialize).EndInit()
+            CType((Me.Root), System.ComponentModel.ISupportInitialize).EndInit()
+            CType((Me.layoutControlItem1), System.ComponentModel.ISupportInitialize).EndInit()
+            CType((Me.layoutControlItem2), System.ComponentModel.ISupportInitialize).EndInit()
+            CType((Me.layoutControlItem3), System.ComponentModel.ISupportInitialize).EndInit()
+            CType((Me.layoutControlItem4), System.ComponentModel.ISupportInitialize).EndInit()
+            CType((Me.layoutControlItem5), System.ComponentModel.ISupportInitialize).EndInit()
+            CType((Me.layoutControlItem6), System.ComponentModel.ISupportInitialize).EndInit()
+            CType((Me.layoutControlItem7), System.ComponentModel.ISupportInitialize).EndInit()
             Me.ResumeLayout(False)
             Me.PerformLayout()
-
         End Sub
 
-        #End Region
-
+#End Region
         Private ribbonControl1 As DevExpress.XtraBars.Ribbon.RibbonControl
+
         Private ribbonPage1 As DevExpress.XtraBars.Ribbon.RibbonPage
+
         Private ribbonPageGroup1 As DevExpress.XtraBars.Ribbon.RibbonPageGroup
+
         Private skinRibbonGalleryBarItem1 As DevExpress.XtraBars.SkinRibbonGalleryBarItem
+
         Private ribbonStatusBar1 As DevExpress.XtraBars.Ribbon.RibbonStatusBar
+
         Private skinPaletteRibbonGalleryBarItem1 As DevExpress.XtraBars.SkinPaletteRibbonGalleryBarItem
+
         Private layoutControl1 As DevExpress.XtraLayout.LayoutControl
+
         Private labelControl4 As DevExpress.XtraEditors.LabelControl
+
         Private labelControl3 As DevExpress.XtraEditors.LabelControl
+
         Private labelControl2 As DevExpress.XtraEditors.LabelControl
+
         Private labelControl1 As DevExpress.XtraEditors.LabelControl
+
         Private Root As DevExpress.XtraLayout.LayoutControlGroup
+
         Private layoutControlItem1 As DevExpress.XtraLayout.LayoutControlItem
+
         Private layoutControlItem2 As DevExpress.XtraLayout.LayoutControlItem
+
         Private layoutControlItem3 As DevExpress.XtraLayout.LayoutControlItem
+
         Private layoutControlItem4 As DevExpress.XtraLayout.LayoutControlItem
+
         Private labelControl6 As DevExpress.XtraEditors.LabelControl
+
         Private labelControl5 As DevExpress.XtraEditors.LabelControl
+
         Private layoutControlItem5 As DevExpress.XtraLayout.LayoutControlItem
+
         Private layoutControlItem6 As DevExpress.XtraLayout.LayoutControlItem
+
         Private labelControl7 As DevExpress.XtraEditors.LabelControl
+
         Private layoutControlItem7 As DevExpress.XtraLayout.LayoutControlItem
     End Class
 End Namespace
-

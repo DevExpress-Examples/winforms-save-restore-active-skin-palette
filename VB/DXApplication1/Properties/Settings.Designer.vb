@@ -10,7 +10,7 @@
 Namespace DXApplication1.Properties
 
     <Global.System.Runtime.CompilerServices.CompilerGeneratedAttribute()>
-    <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "15.3.0.0")>
+    <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "17.0.3.0")>
     Friend NotInheritable Partial Class Settings
         Inherits Global.System.Configuration.ApplicationSettingsBase
 
@@ -45,6 +45,19 @@ Namespace DXApplication1.Properties
 
             Set(ByVal value As String)
                 Me("Palette") = value
+            End Set
+        End Property
+
+        <Global.System.Configuration.UserScopedSettingAttribute()>
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>
+        <Global.System.Configuration.DefaultSettingValueAttribute("False")>
+        Public Property CompactMode As Boolean
+            Get
+                Return(CBool((Me("CompactMode"))))
+            End Get
+
+            Set(ByVal value As Boolean)
+                Me("CompactMode") = value
             End Set
         End Property
     End Class
