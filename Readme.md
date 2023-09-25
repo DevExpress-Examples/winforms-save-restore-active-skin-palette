@@ -6,7 +6,7 @@
 
 # WinForms Skins - Save/restore the active skin and palette between application sessions 
 
-[Windows Forms Application Settings](https://docs.microsoft.com/en-us/dotnet/desktop/winforms/advanced/application-settings-for-windows-forms?view=netframeworkdesktop-4.8) feature allows you to create, store, and maintain user preferences on client computers. You can use this feature to save the active skin and palette and restore these settings when your application restarts.
+The [Windows Forms Application Settings](https://docs.microsoft.com/en-us/dotnet/desktop/winforms/advanced/application-settings-for-windows-forms?view=netframeworkdesktop-4.8) feature allows you to create, store, and maintain user preferences on client computers. You can use this feature to save the active skin and palette and restore these settings when your application restarts.
 
 * Double-click the *Settings.settings* file in the Visual Studio Solution Explorer.
 * Create two entries of the `String` type.
